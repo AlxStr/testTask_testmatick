@@ -29,7 +29,7 @@ public class Rand {
     public static Figure getRandomFigure(){
         int tmp = NumInRange(1,4);
 
-        if (tmp == minValue) return new Square(NumInRange(minValue,maxValue), colors[NumInRange(0,6)]);
+        if (tmp == 1) return new Square(NumInRange(minValue,maxValue), colors[NumInRange(0,6)]);
         else if(tmp == 2) return new Circle(NumInRange(minValue,maxValue), colors[NumInRange(0,6)]);
         else if(tmp == 3 ) {
             int a = NumInRange(minValue, maxValue);
